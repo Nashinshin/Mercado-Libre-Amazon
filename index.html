@@ -1,0 +1,41 @@
+<!-- La intencion de esta API es realizar algo similar a una pagina de MercadoLibre/ Amazon 
+    siendo unicamente para ser visualizado en computadora/laptop (no es mobile-first) -->
+<!-- El precio esta en pesos argentinos -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <form class="search-container">
+        <input
+          type="text"
+          class="searcher"
+          placeholder="Buscar..."
+          name="search" />
+        <input type="submit" class="search" />
+      </form>
+    </header>
+
+    <div class="content">
+      <h3 class="results">Resultados: <span class="results-count"></span></h3>
+      <div class="results"></div>
+    </div>
+    <template id="result-item-template" class="template">
+      <div class="result-item">
+        <img class="result-item-img" src="" />
+        <div class="result-item-content">
+          <p class="result-item-title">Nombre:</p>
+          <p class="result-item-condition">Estado:</p>
+          <p class="result-item-sell-count">Ventas:</p>
+        </div>
+        <p class="result-item-price">1111</p>
+      </div>
+    </template>
+  </body>
+</html>

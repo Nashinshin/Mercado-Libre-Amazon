@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  height: 68px;
+  background-color: #fff159;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-container {
+  width: 510px;
+  height: 44px;
+}
+
+.searcher {
+  width: 70%;
+  height: 44px;
+  border-radius: 4px;
+}
+
+.search {
+  height: 44px;
+  width: 25%;
+  border-radius: 4px;
+}
+
+.results{
+    display: grid;
+    justify-content: center;
+}
+
+.result-item {
+  max-width: 610px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin: 20px auto;
+}
+
+.result-item-img {
+  width: 200px;
+  height: 100px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.result-item-price {
+  color: rgb(4, 132, 202);
+  margin-bottom: 90px;
+  margin-right: 10px;
+}
